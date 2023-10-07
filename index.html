@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- where we tell the browser how to process the document: -->
+  <!-- what title to put in the browser tab -->
+  <!-- what style sheets to load -->
+  <!-- what language to use -->
+  <!-- we will always use a character set called UTF-8 -->
+  <!-- UTF-8 allows for all languages as well as things like emoji -->
+  <style>
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #004643;
+      display: flex;
+      justify-content: center;
+    }
+
+    .banner-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+    }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
+    .name {
+      color: #fffffe;
+      display: flex;
+      justify-content: center;
+    }
+
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .social-icons a {
+      color: #fffffe;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .link {
+      background-color: #59f999;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .link a {
+      color: #001e1d;
+      text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="items">
+    <div class="banner">
+      <img src="/thumbnails/bug1.jpeg" alt="Bugsy Loren headshot" class="banner-image">
+    </div>
+
+    <div class="name">
+      Bugsy Loren
+    </div>
+
+    <div class="social-icons">
+      <a href="https://github.com/osha7" target="_blank">
+        GitHub
+      </a>
+
+      <a href="https://www.linkedin.com/in/osha-groetz-0318b16b" target="_blank">
+        LinkedIn
+      </a>
+
+      <a href="https://www.instagram.com/disparatepatterns/" target="_blank">
+        Instagram
+      </a>
+    </div>
+
+    <div class="link">
+      <img src="/thumbnails/bug2.jpeg" alt="bug2" class="thumbnail">
+
+      <a target="_blank" href="http://paulgraham.com/startupideas.html">How to Get Startup Ideas
+        — Paul Graham</a>
+    </div>
+
+    <div class="link">
+      <img src="/thumbnails/bug3.jpeg" alt="bug3" class="thumbnail">
+
+      <a target="_blank" href="https://practicaltypography.com/typography-in-ten-minutes.html">Typography in ten minutes
+        —
+        Matthew
+        Butterick</a>
+    </div>
+
+    <div class="link">
+      <img src="/thumbnails/bug4.jpeg" alt="bug4" class="thumbnail">
+
+      <a target="_blank" href="https://www.newyorker.com/magazine/2007/12/10/the-checklist/">A
+        Life-Saving Checklist — The New Yorker</a>
+    </div>
+  </div>
+  <!-- Etc, for as many links as you want -->
+</body>
